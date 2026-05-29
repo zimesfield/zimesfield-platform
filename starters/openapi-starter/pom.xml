@@ -21,7 +21,7 @@
     <properties>
         <revision>0.6.0</revision>
         <!-- SpringDoc compatible with Spring Boot 3.x -->
-        <springdoc.version>2.6.0</springdoc.version>
+        <springdoc.version>3.0.3</springdoc.version>
         <jackson-databind-nullable.version>0.2.3</jackson-databind-nullable.version>
 
         <openapi-generator-maven-plugin.version>7.22.0</openapi-generator-maven-plugin.version>
