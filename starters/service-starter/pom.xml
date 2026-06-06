@@ -58,17 +58,6 @@
         <springdoc.version>2.7.0</springdoc.version>
 
     </properties>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.zimesfield</groupId>
-                <artifactId>platform-bom</artifactId>
-                <version>${project.parent.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
@@ -217,34 +206,6 @@
                     <optional>true</optional>
                 </dependency>
             </dependencies>
-        </profile>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                    </plugin>
-
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                    </plugin>
-
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                    </plugin>
-
-                    <!-- Sonatype Central -->
-                    <plugin>
-                        <groupId>org.sonatype.central</groupId>
-                        <artifactId>central-publishing-maven-plugin</artifactId>
-                    </plugin>
-
-                </plugins>
-            </build>
         </profile>
     </profiles>
 
